@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/main.css">
+    <title>Weather</title>
+</head>
+<body>
+        <div class="card">
+            <form action="/" class="search" method="POST">
+                <input type="text" placeholder="Enter City Name" name="location">
+                <button type="submit"><img /></button>
+            </form>
+            <h1><%= cond_txt %></h1>
+            <div class="temp">
+                <img class="main" src="<%= cond_icon %>" />
+                <h2><%= temp_c %>°C</h2>
+                <div class="tempone">
+                    <h3><%= city %></h3>
+                    <p><%= country %></p>
+                    <p><%= localtime %></p>
+                </div>
+            </div>
+            <div class="temp">
+                <div class="temptwo">
+                    <div class="img wind"></div>
+                    <h3><%= wind_kph %> kph</h3>
+                    <h3>Wind in <%= wind_dir %> direction</h3>
+                </div>
+                <div class="temptwo">
+                    <div class="img prec"></div>
+                    <h3><%= precip_mm %> mm</h3>
+                    <h3>Precipitation</h3>
+                </div>
+                <div class="temptwo">
+                    <div class="img hum"></div>
+                    <h3><%= humid %> %</h3>
+                    <h3>Humidity</h3>
+                </div>
+            </div>
+            <h1>Forecast:</h1>
+            <div class="temp">
+                <div class="temptwo">
+                    <img src="<%= cond_icon_one %>" />
+                    <h3><%= forDateOne %></h3>
+                    <p>Maximum Temperature: <%= maxt_one %>°C</p>
+                    <p>Minimum Temperature: <%= mint_one %>°C</p>
+                    <p>Average Temperature: <%= avgt_one %>°C</p>
+                    <p>Maximum Wind: <%= maxwind_one %> kph</p>
+                    <p>Total Precipitation: <%= totprecip_one %> mm</p>
+                    <p>Average Humidity: <%= avghum_one %> %</p>
+                    <p>Chance of Rain: <%= rain_one %> %</p>
+                </div>
+                <div class="temptwo">
+                    <img src="<%= cond_icon_two %>" />
+                    <h3><%= forDateTwo %></h3>
+                    <p>Maximum Temperature: <%= maxt_two %>°C</p>
+                    <p>Minimum Temperature: <%= mint_two %>°C</p>
+                    <p>Average Temperature: <%= avgt_two %>°C</p>
+                    <p>Maximum Wind: <%= maxwind_two %> kph</p>
+                    <p>Total Precipitation: <%= totprecip_two %> mm</p>
+                    <p>Average Humidity: <%= avghum_two %> %</p>
+                    <p>Chance of Rain: <%= rain_two %> %</p>
+                </div>
+                <div class="temptwo">
+                    <img src="<%= cond_icon_thr %>" />
+                    <h3><%= forDateThr %></h3>
+                    <p>Maximum Temperature: <%= maxt_thr %>°C</p>
+                    <p>Minimum Temperature: <%= mint_thr %>°C</p>
+                    <p>Average Temperature: <%= avgt_thr %>°C</p>
+                    <p>Maximum Wind: <%= maxwind_thr %> kph</p>
+                    <p>Total Precipitation: <%= totprecip_thr %> mm</p>
+                    <p>Average Humidity: <%= avghum_thr %> %</p>
+                    <p>Chance of Rain: <%= rain_thr %> %</p>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

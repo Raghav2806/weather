@@ -1,0 +1,129 @@
+body {
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.card {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    margin: 30px;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    border-radius: 30px;
+    padding: 10px 25px;
+    height: 40px;
+    font-size: 18px;
+    flex: 1;
+    max-width: 500px;
+}
+
+.search button {
+    background: url(../images/icons8-search-50.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.temp {
+    width: 100%;
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.main{
+    height: 150px;
+    width: 150px;
+}
+
+h2{
+    font-size: 80px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.tempone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 20px;
+}
+
+h3{
+    margin: 0;
+}
+
+.tempone p{
+    margin: 0;
+}
+
+.temptwo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img {
+    border: 0;
+    outline: 0;
+    width: 70px;
+    height: 70px; 
+}
+
+.wind{
+    background: url(../images/wind.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+}
+
+.prec{
+    background: url(../images/rain.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hum{
+    background: url(../images/humidity.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.temptwo p{
+    margin: 5px;
+}
